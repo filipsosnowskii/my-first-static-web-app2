@@ -11,6 +11,84 @@
 <body>
   <main>
     <h1>Vanilla JavaScript App</h1>
+    Student Number: D23125756 
+
+    Identity Management Technologies
+    
+    Identity management refers to technologies that ensure authorised access to resources in a computing system. They do this by managing authentication, authorisation, privileges etc. across the system, with the main focus being on user identity, along with their roles, privileges and groups that they belong to (“What is Identity Management?”, n.d). These technologies play a crucial role in software security as they prevent unauthorised access to a system’s resources, protecting not only an enterprise’s data but also helping to prevent ransomware attacks.
+    Some features of identity management systems to be considered include:
+    Centralisation - A centralised identity management system means that all of its processes happen in one environment, ie. a user signing into one place to access the necessary resources that may be spread across several different environments. On the other hand, a decentralised system would have a user sign into each application or service they need to use separately. Although a decentralised system in theory offers better security, a centralised system is usually favoured as:
+    There is better threat visibility across the system, allowing for quicker responses.  Additionally, user privileges are more transparent, allowing to see and manage their permissions all in one place (“The Importance of Centralized Identity Management”, 2023). As data breaches are a concern in cloud computing, these are important features in protecting enterprise resources as well as user data.
+    Having to sign in less, creating a better user experience (“Single sign-on”, 2023). This is facilitated by Single Sign-On, where a single user id is used for authentication for several services.
+    Less IT bottlenecks, which are created when onboarding new users. A centralised identity management system makes it much faster and simpler to grant permissions to different resources across an enterprise, making profile activation a much smoother process. This not only reduces the need for IT manpower, but also encourages scalability as it is faster and easier to add new users - this is important within the cloud context as scalability is one of the main strengths of cloud services.
+    Authentication - This refers to verifying and establishing a user’s identity. There are many different types of authentication methods that can be considered, such as passwords, one-time passwords and biometric scans. For identity management in the cloud, some of the following methods of authentication may be used to boost system security:
+    Multiple authentication methods are generally combined for multi factor authentication (MFA), for example using both a password and sending the user a one-time use password to verify their identity when logging in. This is deemed more secure as a user’s account or other resources are still protected even in the event that one of the authentication methods is compromised.
+    Risk-based authentication, where the risk of a user’s actions are calculated, and the system “blocks and reports actions with high risk scores” (“What is Identity and Access Management?”, n.d). 
+    
+    Identity Management technologies do face some issues, such as:
+    If an Identity Management system is badly implemented or breached in some way, it could have detrimental consequences on the enterprise’s entire system due to the easy access to resources and services in the cloud. It is therefore important that these systems comply with all relevant industry standards and regulations.
+    Auditing cloud based systems for security can be quite difficult due to issues such as lack of transparency, encryption by the Cloud Service Providers and the complexity of these systems (Ryoo, Rizvi, AIken, & Kissell, 2014). It is important that these systems are frequently audited for any possible security issues.
+    Access control measures - Where applicable, cloud services must be compliant with regulations such as PCI DSS, HIPAA and ISO 27001 to protect confidential information. Failing to adhere to these standards may pose security issues as well as legal issues. Identity Management technologies generally provide strict access controls, and are able to limit access to resources and what user’s can do with those resources, but these must be carefully and thoughtfully implemented so that roles are defined for their purpose and their purpose only. This can also be helped by the use of audit trails which monitor permission delegation, removal and authorisation (“Identity and Access Management (IAM)”, n.d).
+    
+    TU Dublin may be able to take advantage of Identity Management technologies in the following manners:
+    TUD uses a number of different virtual learning environments, such as Moodle and Brightspace. Using the SSO capabilities of an IAM system would allow students to quickly and seamlessly use these services without having to log in multiple times.
+    Many undergraduate students who graduate TUD go on to do postgraduate courses, many of which involve giving tutorials or lectures, as well as grading student’s assignments and exams. This requires either changing their account’s permissions or creating a new account for them altogether. With an IAM system in place, these changes can be done smoothly - this can also apply to off-boarding graduate students after they leave college.
+    Tying in with the previous point, as the university continues to grow, the simplified onboarding processes via cloud based identity management not only facilitates smooth growth, but also reduced costs in IT manpower.
+    
+    References
+    “What is Identity Management?” (n.d). Retrieved April 18, 2024 from https://www.vmware.com/topics/glossary/content/identity-management.html
+    “The Importance of Centralized Identity Management” (2023).  Retrieved April 18, 2024 from https://www.okta.com/identity-101/the-importance-of-centralized-identity-management/
+    “Single sign-on” (2023).  Retrieved April 18, 2024 from  https://cloud.google.com/architecture/identity/single-sign-on
+    “What is Identity and Access Management?” (n.d).  Retrieved April 18, 2024 from  https://www.oracle.com/middleeast/security/identity-management/what-is-iam/
+    Jungwoo Ryoo, Syed Rizvi, William Aiken, & John Kissell (2014). Cloud Security Auditing: Challenges and Emerging Approaches.  Retrieved April 18, 2024 from https://ieeexplore.ieee.org/abstract/document/6662349 
+    “Identity and Access Management (IAM)” (n.d). Retrieved April 18, 2024 from https://cloud.google.com/security/products/iam 
+    
+    Comparative Analysis of Cloud based IAM offerings
+    There exists a large number of cloud based offerings for Identity Management that can be used by educational institutions. Some of these technologies include Microsoft Entra ID, Duo, and Google’s IAM service. Despite offering similar products, they all offer different solutions to issues regarding ethics, privacy and security, which are some of the main concerns when it comes to implementing identity management in an educational institution:
+    Microsoft Entra ID:
+    Security & Privacy  - Authorisation enables the use of MFA, allowing for the use of passwords, phone/hardware keys and biometric scanning - this is vital in ensuring a secure and private system that prevents unauthorised access and protects from data breaches (“How it works: Microsoft Entra multifactor authentication”, 2023). Entra also features Role Based Access Control (RBAC), which allows for efficient management of user permissions based on their assigned role. This is combined with just-in-time access, which “ensures that privileged access is granted only when needed, reducing the risk of unauthorized access, and limiting the exposure of sensitive resources” (Shukla & Jain, 2024).
+    Ethics - Entra features an SSO, which “utilizes industry-standard protocols such asSAML (Security Assertion Markup Language), OIDC (OpenID Connect), or OAuth(Open Authorization)” (Shukla & Jain, 2024). This signifies Microsoft shows care in following industry standards as well as complying with the necessary regulations, ensuring ethical use of the resources through which can be accessed through Entra ID.
+    Duo:
+    Security & privacy - Duo offers a range of authentication methods for MFA, such as biometric scans, tokens, passcodes as well as their own Duo Push app. This provides a solid and secure way of authenticating users, which combined with Duo’s SSO creates a safe and private environment for students and educational staff. This is further enforced by the Duo Network Gateway, which ensures safe access to an organisation's resources from outside the network, using a VPN-less remote access proxy - as students and educational staff may need to access some sensitive university resource from outsides the university’s network, this could bolster security within the system (DUO, n.d).
+    Ethics - Duo provides help for educational organisations in “meeting regulatory compliance mandates in higher ed easier, including those specified in FERPA, SOC2, GDPR and more” (DUO, n.d) - this is a good solution in helping these institutions ensure that their systems are set up as safely and ethically as possible.
+    Google IAM:
+    Security & Privacy - Google’s Identity Manager service provides SSO and MFA, utilising authentication methods such as “push notifications, Google Authenticator, phishing-resistant Titan Security Keys, and using your Android or iOS device as a security key” (Google Cloud, n.d) - this helps to provide a strong level of security and privacy like in the previous products. This solution also features Recommender, which utilises machine learning to provide suggestions for permissions management, making the process simpler and hence potentially more secure.
+    Ethics - Google’s IAM technology features a built-in audit trail, so that “full audit trail history of permissions authorization, removal, and delegation gets surfaced automatically” (Google Cloud, n.d), making the process of complying to various regulations easier. It additionally features the Organisation Policies service which allows for centralised control over enterprise resources to assist with compliance. Furthermore, it features the Workforce Identity Federation service, which lets the organisation authorise users from the enterprise’s existing identity management service - if an educational organisation already has such a system in place this allows them to leverage the already existing regulatory compliance that is being employed.
+    
+    
+    
+    
+    The above technologies utilise the Cloud Service Oriented Architecture, which refers to building applications using services in the cloud. This kind of architectures can be utilised by cloud based identity management in the following way:
+    Modularity - In the context of educational provision, not all of the services on offer by these identity management technologies might be useful. However, thanks to the CSOA approach it is possible to pick and choose the services on offer within these technologies to suit the organisation’s needs.
+    Scalability - Educational organisations, like any other organisations, tend to change in size over time. The benefit of using CSOA is that it greatly simplifies the onboarding and offboarding of new students and staff, saving on IT costs as well as letting the process run more smoothly. 
+    
+    References
+    “How it works: Microsoft Entra multifactor authentication” (2023). Retrieved April 18, 2024 from https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks 
+    Sheetakshi Shukla & Kirti Jain (2024). Rise of Identity and Access Management with Microsoft Security. Retrieved April 18, 2024 from 
+    https://ijaets.in/articles/5-1/CCET-16.pdf
+    DUO (n.d). Retrieved April 18, 2024 from https://duo.com/product 
+    Google Cloud (n.d). Retrieved April 18, 2024 from 
+    https://cloud.google.com/security/products/iam
+    
+    
+    
+    Research Topic: AI Use In Cloud Computing
+    Article: Revolutionizing America's Cloud Computing the Pivotal Role of AI in Driving Innovation and Security
+    Reference: Hassan Rehan (2024). Revolutionizing America's Cloud Computing the Pivotal Role of AI in Driving Innovation and Security. Retrieved April 18, 2024 from http://jaigs.org/index.php/JAIGS/article/view/43/32 
+    
+    Artificial Intelligence (AI) is being increasingly used across all technological domains, including cloud computing, where it is mainly focused on “automatic scaling and self-healing systems within cloud infrastructures”. This means that AI is being used to try and introduce systems that can scale by themselves when necessary, and fix themselves in the case of any errors or failures. This allows for more optimised resource management. In my opinion this would have clear benefits to both cloud service providers, in the form of cheaper costs of maintenance, as well as customers, in the form of better performing services.
+    AI is largely based on machine learning models, and these can be very resource expensive to run. The cloud can be leveraged as a platform for running these models, thanks to the large amount of resources that are available in these cloud based systems, as well as their scalability. This has the potential to be more cost effective than using on-premise hardware, as the pay-as-you-go model charges only for the resources that have been used.
+    There already exist some cloud based AI-related services, “exemplified by platforms such as IBM Watson, Microsoft Azure Machine Learning, AWS Deep Learning AMIs, Google Cloud Machine Learning Engine, among others”.
+    Despite the innovative potential, there are some challenges that need to be solved going forward such as protecting sensitive data and user privacy, as new AI technologies also will bring about new threats. The paper also states that price competitions among cloud service providers help to bring increasingly lower costs to consumers, however it may impact future profitability - I believe that there is a risk that this may become a significant issue that could stifle the progress of introducing cloud-based AI services if there is a low profit incentive.
+    
+    Setting Up a Cloud Based Web Server
+    Setting and running a cloud based web server using Azure proved to be a relatively straightforward task. Creating an Azure account using my college email was quick and smooth, and Microsoft provides a quick and easy tutorial for setting up a static web page - https://learn.microsoft.com/en-gb/azure/static-web-apps/getting-started?tabs=vanilla-javascript. The steps can be summarised as follows:
+    Create a github repository with the provided link and clone it locally
+    Install the Azure Static Web extension for VS code and use it to create a static web app using the cloned git repository
+    Create the app - it should be up and running
+    Any changes to this site can be made by pushing changes to the git repository
+    
+    
   </main>
 </body>
 
